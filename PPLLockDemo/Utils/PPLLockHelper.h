@@ -44,6 +44,11 @@ typedef void(^BLEBlock)(BOOL succeed,id info);
                       key:(PPLKeyModel *)key
                complition:(BLEBlock)complition;
 
++ (void)deleteKeyboardPwd:(NSString *)keyboadPs
+           keyboardPsType:(KeyboardPsType)type
+                      key:(PPLKeyModel *)key
+               complition:(BLEBlock)complition;
+
 + (void)GetLockTimeComplition:(BLEBlock)complition;
 
 

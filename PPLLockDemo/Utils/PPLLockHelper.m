@@ -80,8 +80,6 @@ static  PPLLockHelper * instace;
     
     _bleBlockDict = [NSMutableDictionary dictionary];
     
-    [self.PPLObject startScan];
-    
     return self;
     
 }
@@ -89,7 +87,7 @@ static  PPLLockHelper * instace;
 - (void)PPLCenterManagerDidUpdateState:(PPLManagerState)state
 {
     if (state == PPLManagerStatePoweredOn) {
-        [_PPLObject stopScan];
+        [self.PPLObject startScan];
     }else if (state == PPLManagerStatePoweredOff){
         [_PPLObject stopScan];
     }else if (state == PPLManagerStateUnsupported){
@@ -221,6 +219,27 @@ static  PPLLockHelper * instace;
     [PPLObjectPPLLockHelper  addKeyboardPassword_LockId:key.lockId accessToken:key.accessToken password:newKeyboardPwd startDate:startDate endDate:endDate];
 }
 
++ (void)deleteKeyboardPwd:(NSString *)keyboadPs
+           keyboardPsType:(KeyboardPsType)type
+                      key:(PPLKeyModel *)key
+               complition:(BLEBlock)complition
+{
+    if (!key) {
+        
+        complition(NO,nil);
+        
+        return;
+    }
+    
+    if (complition) {
+        
+        
+        [[PPLLockHelper shareInstance].bleBlockDict setObject:complition forKey:PPLBLE_DELETEKEYBOARDPWD];
+        
+    }
+    
+    [PPLObjectPPLLockHelper  deleteOneKeyboardPassword_LockId:key.lockId accessToken:key.accessToken password:keyboadPs passwordType:type];
+}
 
 + (void)GetLockTimeComplition:(BLEBlock)complition
 {

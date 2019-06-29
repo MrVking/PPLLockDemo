@@ -64,7 +64,7 @@ static  NSString * lockDeviceCellID = @"deviceCell";
     
     PPLObjectPPLLockHelper.delegate = self;
     
-    [PPLObjectPPLLockHelper startScan];
+    [PPLObjectPPLLockHelper setupBluetooth];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -178,6 +178,23 @@ static  NSString * lockDeviceCellID = @"deviceCell";
     
     [PPLObjectPPLLockHelper connect:blueModel.peripheral];
     
+}
+
+- (void)PPLCenterManagerDidUpdateState:(PPLManagerState)state
+{
+    if (state == PPLManagerStatePoweredOn) {
+        
+        [self showHUD:LS(@"Searching for nearby locks...")];
+        
+        [PPLObjectPPLLockHelper startScan];
+        
+    }else if(state == PPLManagerStatePoweredOff){
+        
+        [self hideHUD];
+        
+        [self showToast:@"Please turn on your phone Bluetooth first."];
+        
+    }
 }
 
 - (void)didFindPeripheral:(CBPeripheral *)peripheral lockName:(NSString *)lockName mac:(NSString *)mac hasBind:(BOOL)hasBind

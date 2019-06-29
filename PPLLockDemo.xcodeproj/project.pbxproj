@@ -22,7 +22,7 @@
 		188D100021E4C3330070C3D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 188D0FFF21E4C3330070C3D6 /* Localizable.strings */; };
 		189059AA21E72F5900080F00 /* PPLLockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 189059A921E72F5900080F00 /* PPLLockHelper.m */; };
 		1895D6E421E8A414009150AF /* PPLOnFoundDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895D6E321E8A414009150AF /* PPLOnFoundDeviceModel.m */; };
-		18BA824022BA3BD40040B77A /* libPPLLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA823F22BA3BD40040B77A /* libPPLLock.a */; };
+		18BC2E4C22C7AEBA00AAF089 /* libPPLLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BC2E4A22C7AEBA00AAF089 /* libPPLLock.a */; };
 		18C90DB222B8949D00594510 /* NSString+PPLTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C90DB122B8949D00594510 /* NSString+PPLTime.m */; };
 		18CC3BC521E6F01700855D1B /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC3BC421E6F01700855D1B /* UIViewController+HUD.m */; };
 		18CC3BCA21E6F43800855D1B /* PPLDeviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC3BC821E6F43800855D1B /* PPLDeviceTableViewController.m */; };
@@ -68,8 +68,8 @@
 		189059A921E72F5900080F00 /* PPLLockHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLLockHelper.m; sourceTree = "<group>"; };
 		1895D6E221E8A414009150AF /* PPLOnFoundDeviceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLOnFoundDeviceModel.h; sourceTree = "<group>"; };
 		1895D6E321E8A414009150AF /* PPLOnFoundDeviceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLOnFoundDeviceModel.m; sourceTree = "<group>"; };
-		18BA823E22BA3BD40040B77A /* PPLLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLLock.h; sourceTree = "<group>"; };
-		18BA823F22BA3BD40040B77A /* libPPLLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPLLock.a; sourceTree = "<group>"; };
+		18BC2E4A22C7AEBA00AAF089 /* libPPLLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPLLock.a; sourceTree = "<group>"; };
+		18BC2E4B22C7AEBA00AAF089 /* PPLLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLLock.h; sourceTree = "<group>"; };
 		18C90DB022B8949D00594510 /* NSString+PPLTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PPLTime.h"; sourceTree = "<group>"; };
 		18C90DB122B8949D00594510 /* NSString+PPLTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPLTime.m"; sourceTree = "<group>"; };
 		18CC3BC321E6F01700855D1B /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CF73DD147394BE7AABD45A /* libPods-PPLLockDemo.a in Frameworks */,
-				18BA824022BA3BD40040B77A /* libPPLLock.a in Frameworks */,
+				18BC2E4C22C7AEBA00AAF089 /* libPPLLock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +152,8 @@
 		1839B74521DF4CE20089BBA9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				18BA823F22BA3BD40040B77A /* libPPLLock.a */,
-				18BA823E22BA3BD40040B77A /* PPLLock.h */,
+				18BC2E4A22C7AEBA00AAF089 /* libPPLLock.a */,
+				18BC2E4B22C7AEBA00AAF089 /* PPLLock.h */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
