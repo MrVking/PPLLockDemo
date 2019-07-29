@@ -13,7 +13,7 @@
 		1839B73921DF4C7D0089BBA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1839B73821DF4C7D0089BBA9 /* Assets.xcassets */; };
 		1839B73C21DF4C7D0089BBA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1839B73A21DF4C7D0089BBA9 /* LaunchScreen.storyboard */; };
 		1839B73F21DF4C7D0089BBA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1839B73E21DF4C7D0089BBA9 /* main.m */; };
-		1862D98622EEDD070046E3D7 /* libPPLLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1862D98522EEDD070046E3D7 /* libPPLLock.a */; };
+		1862D98922EEE2E10046E3D7 /* libPPLLock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1862D98722EEE2E10046E3D7 /* libPPLLock.a */; };
 		188B92F821E478DA0004DA93 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B92F221E478DA0004DA93 /* MBProgressHUD.m */; };
 		188B92F921E478DA0004DA93 /* SSToastHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B92F321E478DA0004DA93 /* SSToastHelper.m */; };
 		188B92FA21E478DA0004DA93 /* SSHUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B92F421E478DA0004DA93 /* SSHUDHelper.m */; };
@@ -49,8 +49,8 @@
 		1839B73B21DF4C7D0089BBA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1839B73D21DF4C7D0089BBA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1839B73E21DF4C7D0089BBA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1862D98422EEDD070046E3D7 /* PPLLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLLock.h; sourceTree = "<group>"; };
-		1862D98522EEDD070046E3D7 /* libPPLLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPLLock.a; sourceTree = "<group>"; };
+		1862D98722EEE2E10046E3D7 /* libPPLLock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPLLock.a; sourceTree = "<group>"; };
+		1862D98822EEE2E10046E3D7 /* PPLLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLLock.h; sourceTree = "<group>"; };
 		188B92EE21E477640004DA93 /* PPLLock.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLLock.pch; sourceTree = "<group>"; };
 		188B92EF21E4777A0004DA93 /* PPLDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLDefine.h; sourceTree = "<group>"; };
 		188B92F221E478DA0004DA93 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CF73DD147394BE7AABD45A /* libPods-PPLLockDemo.a in Frameworks */,
-				1862D98622EEDD070046E3D7 /* libPPLLock.a in Frameworks */,
+				1862D98922EEE2E10046E3D7 /* libPPLLock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +152,8 @@
 		1839B74521DF4CE20089BBA9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				1862D98522EEDD070046E3D7 /* libPPLLock.a */,
-				1862D98422EEDD070046E3D7 /* PPLLock.h */,
+				1862D98722EEE2E10046E3D7 /* libPPLLock.a */,
+				1862D98822EEE2E10046E3D7 /* PPLLock.h */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
